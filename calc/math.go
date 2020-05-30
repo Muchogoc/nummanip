@@ -1,6 +1,12 @@
 package calc
 
-// Add is used to return sum of two numbers
-func Add(i int, j int) int {
-	return i + j
+// Add is used to return sum numbers
+func Add(numbers ...int) int {
+	sum := 0
+
+	for _, number := range numbers {
+		sum = sum + number
+	}
+
+	return sum
 }
